@@ -1,10 +1,143 @@
 .App {
   text-align: center;
 }
-
+.custom-bg-primary {
+  background: #FFFFFF;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+
+#dark{
+  background: rgb(37,37,37);
+  transition: 0.5s;
+}
+#light{
+  background: cornflowerblue; 
+  transition: 0.5s;
+}
+.darkContainer{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(50,54,57);
+  transition: 0.5s;
+}
+.lightContainer{
+  background: rgb(249,249,249);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.iconDark{
+  transition: .5s !important;
+}
+.btn-Light-Nav{
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 3rem;
+  color: #fff;
+  border: none;
+  background-color: rgb(50,54,57);
+  transition: 0.5s;
+}
+.btn-Dark-Nav{
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 3rem;
+  color: #fff;
+  border: none;
+  background-color: cornflowerblue;
+  transition: 0.5s;
+}
+.lightInputContainer{
+  width: 50em;
+  padding: .5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.darkInputContainer{
+  border: 1px solid cornflowerblue;
+  width: 50em;
+  padding: .5rem;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.darkInput{
+  margin-right: .5rem !important;
+  border: none !important;
+  color: white !important;
+  background: rgb(37,37,37) !important;
+  transition: 0.5s !important;
+}
+.lightInput{
+  margin-right: .5rem !important;
+  border: none !important;
+  color: black !important;
+  border-color: cornflowerblue !important;
+  transition: 0.5s !important;
+}
+.btnLight{
+  color: white !important;
+  background: cornflowerblue !important;
+  border-color: rgb(37,37,37) !important;
+  transition: 0.5s;
+}
+.btnDark{
+  color: cornflowerblue !important;
+  background: rgb(37,37,37) !important; 
+  transition: 0.5s;
+}
+
+.darkList {
+  width: 50em !important;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 3rem;
+  border: 1px solid cornflowerblue;
+  transition: 0.5s;
+}
+.lightList {
+  width: 50em !important;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-top: 3rem;
+  border: 1px solid black;
+  transition: 0.5s;
+}
+.listH1 {
+  color: cornflowerblue;
+  text-align: center;
+  border-bottom: 1px solid black;
+  transition: 0.5s;
+}
+.darkListH1 {
+  color: cornflowerblue;
+  text-align: center;
+  border-bottom: 1px solid cornflowerblue;
+  transition: 0.5s;
+}
+.inputLight{
+  display: flex !important;
+  justify-content: space-between;
+  border: none !important;
+  color: black !important;
+  border-color: cornflowerblue !important;
+  transition: 0.5s;
+}
+.inputDark{
+  display: flex !important;
+  justify-content: space-between;
+  border: none !important;
+  color: white !important;
+  background: rgb(37,37,37) !important;
+  transition: 0.5s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,6 +147,7 @@
 }
 
 .App-header {
+  transition: 1s;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
